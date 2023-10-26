@@ -1,0 +1,41 @@
+---
+import "@fontsource-variable/plus-jakarta-sans";
+import { ViewTransitions } from "astro:transitions";
+import "~/styles/main.css";
+interface Props {
+  title: string;
+  description: string;
+  bodyClass?: string;
+}
+
+const { title, description, bodyClass } = Astro.props;
+
+const { origin, href } = Astro.url;
+
+const ogImage = `${origin}/og.png`;
+---
+
+<html lang="en" class="h-full" transition:animate="none">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={href} />
+    <ViewTransitions />
+  </head>
+  <body
+    class:list={["flex flex-col antialiased", bodyClass]}
+  >
+    <slot />
+  </body>
+</html>
