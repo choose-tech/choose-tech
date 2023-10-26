@@ -12,8 +12,8 @@
     "format": "prettier . -w && prettier -w ./**/*.astro"
   },
   "dependencies": {
+    "@astrojs/netlify": "^3.0.3",
     "@astrojs/tailwind": "^5.0.2",
-    "@astrojs/vercel": "^5.1.0",
     "@fontsource-variable/plus-jakarta-sans": "^5.0.18",
     "astro": "^3.3.4",
     "sharp": "^0.32.6",

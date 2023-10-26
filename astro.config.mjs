@@ -1,8 +1,7 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import Icons from "unplugin-icons/vite";
-
-import vercel from "@astrojs/vercel/serverless";
+import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,5 +15,5 @@ export default defineConfig({
     })]
   },
   output: "hybrid",
-  adapter: vercel()
+  adapter: netlify()
 });
