@@ -1,0 +1,40 @@
+---
+import HeroiconsRocketLaunchSolid from "~icons/heroicons/rocket-launch-solid";
+import HeroiconsStarSolid from "~icons/heroicons/star-solid";
+import HeroiconsArrowTopRightOnSquare from "~icons/heroicons/arrow-top-right-on-square";
+---
+
+<section
+  class="flex flex-col items-start sm:items-center bg-gradient-to-b from-gray-900 to-gray-950 px-6 py-24"
+>
+  <a
+    href="https://florian-lefebvre.dev/blog/announcing-choose-tech"
+    target="_blank"
+    class="mb-8 inline-flex items-center rounded-full border border-primary-500 px-4 py-2 text-sm font-semibold text-primary-500 transition-colors hover:bg-primary-950"
+  >
+    <span>Announcing Choose Tech</span>
+    <HeroiconsArrowTopRightOnSquare class="-mr-1 ml-2 h-4 w-4" />
+  </a>
+  <h1 class="sm:text-center text-4xl font-bold text-gray-200 sm:text-6xl">
+    Choosing a tech<span class="block text-primary-600">should not be hard</span
+    >
+  </h1>
+  <p class="mt-6 max-w-2xl sm:text-center font-medium tracking-wide text-gray-400">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi
+    ipsum ipsam eveniet tempora soluta voluptatum iusto omnis fugiat dolorum.
+  </p>
+  <div class="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-center max-sm:space-y-4 sm:space-x-4 w-full">
+    <a href="#comparisons" class="button button-primary">
+      <HeroiconsRocketLaunchSolid />
+      <span>Get started</span>
+    </a>
+    <a
+      href="https://github.com/choose-tech/choose-tech"
+      target="_blank"
+      class="button button-gray"
+    >
+      <HeroiconsStarSolid class="text-amber-400" />
+      <span>Star us on GitHub</span>
+    </a>
+  </div>
+</section>

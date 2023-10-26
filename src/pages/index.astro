@@ -1,0 +1,47 @@
+---
+import "@fontsource-variable/plus-jakarta-sans";
+import { ViewTransitions } from "astro:transitions";
+import "~/styles/main.css";
+import Community from "./_components/Community.astro";
+import Header from "./_components/Header.astro";
+import Hero from "./_components/Hero.astro";
+import Comparisons from "~/pages/_components/Comparisons.astro";
+import Footer from "~/pages/_components/Footer.astro";
+
+const title = "Choose Tech | Choosing a tech should not be hard";
+const description = "";
+
+const { origin, href } = Astro.url;
+
+const ogImage = `${origin}/og.png`;
+---
+
+<html lang="en" class="h-full" transition:animate="none">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={href} />
+    <ViewTransitions />
+  </head>
+  <body class="flex min-h-full flex-col bg-gray-900 antialiased">
+    <Header />
+    <main class="flex-1 bg-gray-950">
+      <Hero />
+      <Community />
+      <Comparisons />
+    </main>
+    <Footer />
+  </body>
+</html>

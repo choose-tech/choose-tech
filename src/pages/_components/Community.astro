@@ -1,0 +1,51 @@
+---
+import HeroiconsUsersSolid from "~icons/heroicons/users-solid";
+import HeroiconsLockOpenSolid from "~icons/heroicons/lock-open-solid";
+import HeroiconsLightBulbSolid from "~icons/heroicons/light-bulb-solid";
+
+type Icon = (props: astroHTML.JSX.SVGAttributes) => astroHTML.JSX.Element;
+
+type Card = {
+  icon: Icon;
+  title: string;
+  description: string;
+};
+
+const cards: Array<Card> = [
+  {
+    icon: HeroiconsLightBulbSolid,
+    title: "Guidance",
+    description:
+      "one of the most innovative period but it has never been harder to choose",
+  },
+  {
+    icon: HeroiconsLockOpenSolid,
+    title: "Open-Source",
+    description: "everything is public, we need you",
+  },
+  {
+    icon: HeroiconsUsersSolid,
+    title: "Ownership",
+    description: "people are maintaining their own CT instance",
+  },
+];
+---
+
+<section class="mx-auto max-w-7xl px-6 py-16">
+  <h2 class="mb-12 sm:text-center text-3xl font-bold text-gray-200 sm:text-5xl">
+    Built by the community,<span class="block text-primary-600"
+      >for the community</span
+    >
+  </h2>
+  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+    {
+      cards.map(({ icon: Icon, title, description }) => (
+        <div class="bg-gray-900 p-6">
+          <Icon class="mb-4 h-12 w-12 text-primary-600" />
+          <h3 class="mb-2 text-2xl font-bold text-white">{title}</h3>
+          <p class="font-medium text-gray-400">{description}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,30 @@
+{
+  "name": "choose-tech",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@8.9.2",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier . -w && prettier -w ./**/*.astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.2",
+    "@fontsource-variable/plus-jakarta-sans": "^5.0.18",
+    "astro": "^3.3.4",
+    "sharp": "^0.32.6",
+    "tailwindcss": "^3.3.5"
+  },
+  "devDependencies": {
+    "@iconify-json/heroicons": "^1.1.13",
+    "@iconify-json/simple-icons": "^1.1.76",
+    "@types/node": "^20.8.9",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.1",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "unplugin-icons": "^0.17.1"
+  }
+}

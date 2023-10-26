@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Plus Jakarta Sans Variable", sans-serif;
+  color-scheme: dark;
+}
+
+html {
+  @apply selection:bg-primary-400/80 selection:text-gray-900 motion-safe:scroll-smooth;
+}
+
+/* Focusable elements */
+a[href],
+button,
+input,
+textarea,
+select,
+details,
+[tabindex]:not([tabindex="-1"]) {
+  @apply focus:outline-none focus-visible:!outline-4 focus-visible:!outline-blue-600 focus-visible:![outline-style:solid];
+}
+
+@layer components {
+  .button {
+    @apply flex select-none items-center px-6 py-3 text-lg font-semibold transition-colors justify-center;
+  }
+
+  .button svg {
+    @apply h-6 w-6 -mx-1;
+  }
+
+  .button :is(svg + span, span + svg) {
+    @apply ml-3;
+  }
+
+  .button-gray {
+    @apply bg-gray-800 text-white hover:bg-gray-700;
+  }
+
+  .button-primary {
+    @apply bg-primary-700 text-white hover:bg-primary-600;
+  }
+
+  .button-white {
+    @apply bg-white text-gray-950 hover:bg-primary-100;
+  }
+}

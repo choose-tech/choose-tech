@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import HeroiconsPlusSolid from "~icons/heroicons/plus-solid";
+
+const comparisons = await getCollection("comparisons");
+---
+
+<section id="comparisons" class="mx-auto max-w-7xl px-6 py-16">
+  <h2 class="mb-12 text-3xl font-bold text-gray-200 sm:text-center sm:text-5xl">
+    Our comparisons,<span class="block text-primary-600">hand-picked</span>
+  </h2>
+  <div class="grid grid-cols-1 gap-6 sm:grid-cols-4">
+    <div class="relative bg-gray-900 p-6 transition-colors hover:bg-gray-800">
+      <div
+        class="mb-4 flex h-12 w-12 items-center justify-center border-2 border-dashed border-gray-500 text-gray-500"
+      >
+        <HeroiconsPlusSolid class="h-6 w-6" />
+      </div>
+      <h3 class="text-2xl font-bold text-white">
+        <a
+          href="https://github.com/choose-tech/choose-tech/issues/new"
+          target="_blank"
+        >
+          Yours?
+          <span class="absolute inset-0"></span>
+        </a>
+      </h3>
+    </div>
+    {
+      comparisons.map(({ id, data: { title, logo, color } }) => (
+        <div
+          class="relative border-4 bg-gray-900 p-6 transition-colors hover:bg-gray-800"
+          style={{ borderColor: color }}
+        >
+          <Image src={logo} alt="" class="mb-4 h-12 w-12" />
+          <h3 class="text-2xl font-bold">
+            <a href={`/${id}`}>
+              {title} <span class="absolute inset-0" />
+            </a>
+          </h3>
+        </div>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,66 @@
+---
+import SimpleIconsGithub from "~icons/simple-icons/github";
+---
+
+<div class="bg-gray-950">
+  <div class="bg-gradient-to-b from-gray-950 to-gray-900">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div
+        class="flex flex-col items-start bg-gradient-to-b from-primary-500 to-primary-700 p-6 sm:items-center sm:px-12 sm:py-20"
+      >
+        <h2 class="text-3xl font-bold text-gray-950 sm:text-center sm:text-5xl">
+          We need your help
+        </h2>
+        <p
+          class="mt-6 max-w-2xl font-medium tracking-wide text-gray-200 sm:text-center"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          excepturi ipsum ipsam eveniet tempora soluta voluptatum iusto omnis
+          fugiat dolorum.
+        </p>
+        <div
+          class="mt-8 flex w-full flex-col max-sm:space-y-4 sm:flex-row sm:items-center sm:justify-center sm:space-x-4"
+        >
+          <a
+            href="https://github.com/choose-tech/choose-tech"
+            target="_blank"
+            class="button button-white"
+          >
+            <SimpleIconsGithub />
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-gray-900">
+    <div
+      class="mx-auto flex max-w-7xl flex-col items-center justify-between px-6 py-4 sm:flex-row"
+    >
+      <a href="/" class="group select-none">
+        <img
+          src="/logo-lg.svg"
+          alt=""
+          class="h-12 transition-transform group-hover:scale-105"
+        />
+      </a>
+      <div class="text-sm font-medium text-gray-300 max-sm:mt-4">
+        <a
+          href="https://github.com/choose-tech/choose-tech/blob/main/LICENSE"
+          target="_blank"
+          class="text-white underline">MIT License</a
+        >. Copyright &copy; <span id="footer-date"></span>{" "}
+        <a
+          href="https://florian-lefebvre.dev"
+          target="_blank"
+          class="text-white underline">Florian Lefebvre</a
+        >
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script is:inline>
+const el = document.getElementById("footer-date");
+el.innerText = new Date().getFullYear();
+</script>
