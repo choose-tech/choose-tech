@@ -1,0 +1,8 @@
+name: Comparison request
+description: Ask maintainers to create a repo for a new comparison
+labels: [enhancement]
+assignees: [florian-lefebvre]
+body:
+  - type: textarea
+    attributes:
+      label: Your request
