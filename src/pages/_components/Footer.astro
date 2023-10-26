@@ -1,4 +1,5 @@
 ---
+import Logo from "~/pages/_components/Logo.astro";
 import SimpleIconsGithub from "~icons/simple-icons/github";
 ---
 
@@ -37,13 +38,7 @@ import SimpleIconsGithub from "~icons/simple-icons/github";
     <div
       class="mx-auto flex max-w-7xl flex-col items-center justify-between px-6 py-4 sm:flex-row"
     >
-      <a href="/" class="group select-none">
-        <img
-          src="/logo-lg.svg"
-          alt=""
-          class="h-12 transition-transform group-hover:scale-105"
-        />
-      </a>
+      <Logo />
       <div class="text-sm font-medium text-gray-300 max-sm:mt-4">
         <a
           href="https://github.com/choose-tech/choose-tech/blob/main/LICENSE"
@@ -62,5 +57,5 @@ import SimpleIconsGithub from "~icons/simple-icons/github";
 
 <script is:inline>
 const el = document.getElementById("footer-date");
-  el.innerText = new Date().getFullYear();
+el.innerText = new Date().getFullYear();
 </script>

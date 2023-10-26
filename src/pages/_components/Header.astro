@@ -1,16 +1,14 @@
 ---
+import Logo from "~/pages/_components/Logo.astro";
 import SimpleIconsGithub from "~icons/simple-icons/github";
 ---
-<div class="h-1.5 bg-primary-600" />
+
+<div class="h-1.5 bg-primary-600"></div>
 <header class="">
-  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 space-x-2">
-    <a href="/" class="group select-none">
-      <img
-        src="/logo-lg.svg"
-        alt=""
-        class="h-12 transition-transform group-hover:scale-105"
-      />
-    </a>
+  <div
+    class="mx-auto flex max-w-7xl items-center justify-between space-x-2 px-6 py-2"
+  >
+    <Logo />
     <div class="flex items-center space-x-2">
       <a
         href="https://github.com/choose-tech/choose-tech"
