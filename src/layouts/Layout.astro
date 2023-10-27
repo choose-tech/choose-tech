@@ -31,11 +31,19 @@ const ogImage = `${origin}/og.png`;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={href} />
+    {
+      import.meta.env.PROD && (
+        <script
+          is:inline
+          defer
+          data-domain="choose-tech.com"
+          src="/pl/js/script.js"
+        />
+      )
+    }
     <ViewTransitions />
   </head>
-  <body
-    class:list={["flex flex-col antialiased", bodyClass]}
-  >
+  <body class:list={["flex flex-col antialiased", bodyClass]}>
     <slot />
   </body>
 </html>
