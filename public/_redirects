@@ -1,3 +1,3 @@
-/pl/js/script.js          https://plausible.io/js/script.js                     200
-/pl/api/event             https://plausible.io/api/event                        200
-/javascript-libraries/*   https://javascript-libraries.choose-tech.com/:splat   200!
+/pl/js/script.js    https://plausible.io/js/script.js       200
+/pl/api/event       https://plausible.io/api/event          200
+/:path/*            https://:path.choose-tech.com/:splat    200!
