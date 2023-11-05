@@ -13,7 +13,7 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     redirectsIntegration({
-      redirects: ["javascript-libraries", "vue-ui-libraries"],
+      redirects: ["databases", "javascript-libraries", "vue-ui-libraries"],
     }),
   ],
   vite: {
