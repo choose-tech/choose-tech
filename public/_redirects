@@ -1,4 +1,2 @@
-/pl/js/script.js          https://plausible.io/js/script.js                                           200
-/pl/api/event             https://plausible.io/api/event                                              200
-/javascript-libraries/*   https://javascript-libraries.choose-tech.com/javascript-libraries/:splat    200!
-/vue-ui-libraries/*       https://vue-ui-libraries.choose-tech.com/vue-ui-libraries/:splat            200!
+/pl/js/script.js    https://plausible.io/js/script.js   200
+/pl/api/event       https://plausible.io/api/event      200
