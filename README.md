@@ -1,47 +1,48 @@
-# Astro Starter Kit: Minimal
+<p align="center">
+  <img src="public/logo.svg" height="128">
+  <h2 align="center"><a href="https://choose-tech.com">Choose Tech</a></h2>
+  <p align="center">Hand-picked comparisons for your next project.<p>
+</p>
 
-```sh
-npm create astro@latest -- --template minimal
-```
+<hr />
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+Choose Tech is a free and open-source resource portal to help devs pick the right tech for their next project.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Choose Tech provides tooling for the community to create comparisons and keep them up to date. It's all made posible by our [Astro integration](https://github.com/choose-tech/astro-integration).
 
-## 🚀 Project Structure
+## Features
 
-Inside of your Astro project, you'll see the following folders and files:
+- Great tooling to manage comparisons and resources with almost no boilerplate
+- Filtering
+- Sorting (soon)
+- Progressively enhanced UI powered by [Astro View Transitions](https://docs.astro.build/en/guides/view-transitions/)
+- Icons through [iconify](https://iconify.design/)
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Contributing
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+You want to help? There is stuff to tackle for sure!
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Maintain a comparison:** Review PRs and issues
+- **Create a new comparison:** Open an issue on this repo
+- **Add resources:** Follow the guide on any comparison's README
+- **Keep resources up to date:** logos change, maybe there's a better way of categorizing
+- **Update choose-tech.com:** Feel free to open an issue if you have an idea
+- **Update the comparator:** There are many things we'd love to do, have a look at the [repo](https://github.com/choose-tech/astro-integration)
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Development
 
-## 🧞 Commands
+To run this website locally, you'll need [Node.js](https://nodejs.org/) `18.14.1`. We recommend using something like `nvm` to manage node versions. Once installed, enable Corepack using `corepack enable`. It will install PNPM for you.
 
-All commands are run from the root of the project, from a terminal:
+Start by installing the dependencies with `pnpm i --frozen-lockfile`, then start the local server with `pnpm dev`. That's it!
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+It's a standard [Astro](https://astro.build/) website, have a look at their [docs](https://docs.astro.build/) if you need more info!
 
-## 👀 Want to learn more?
+## Credits and inspiration
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [UI Lib Picker](https://github.com/ddahan/ui-libs)
+- [nuxt.com](https://nuxt.com) for the hero design
+- [Nuxt modules](https://nuxt.com/modules), [Astro integrations](https://astro.build/integrations/) and [RégioLangues](https://www.regiolangues.fr/) for the resources design
+
+## License
+
+Published under [MIT License](./LICENSE).
