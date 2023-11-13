@@ -5,6 +5,7 @@ import Hero from "./_components/Hero.astro";
 import Comparisons from "~/pages/_components/Comparisons.astro";
 import Footer from "~/pages/_components/Footer.astro";
 import Layout from "~/layouts/Layout.astro";
+import Banner from "~/pages/_components/Banner.astro";
 
 const title = "Choose Tech | Choosing a tech should not be hard";
 const description =
@@ -12,6 +13,7 @@ const description =
 ---
 
 <Layout {title} {description} bodyClass="min-h-full bg-gray-900">
+  <Banner />
   <Header />
   <main class="flex-1 bg-gray-950">
     <Hero />

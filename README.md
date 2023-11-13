@@ -4,7 +4,7 @@
   <p align="center">Hand-picked comparisons for your next project.<p>
 </p>
 
-<hr />
+<img src=".github/assets/databases.png" alt="Screenshot of the databases comparison">
 
 Choose Tech is a free and open-source resource portal to help devs pick the right tech for their next project.
 
