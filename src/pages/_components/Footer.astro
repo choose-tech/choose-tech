@@ -36,10 +36,18 @@ import SimpleIconsGithub from "~icons/simple-icons/github";
   </div>
   <footer class="bg-gray-900">
     <div
-      class="mx-auto flex max-w-7xl flex-col items-center justify-between px-6 py-4 sm:flex-row"
+      class="mx-auto flex max-w-7xl flex-col items-center justify-between px-6 py-4 md:flex-row"
     >
-      <Logo />
-      <div class="text-sm font-medium text-gray-300 max-sm:mt-4">
+      <div class="flex items-center space-x-2">
+        <Logo />
+        <a href="https://www.netlify.com">
+          <img
+            src="https://www.netlify.com/v3/img/components/netlify-color-accent.svg"
+            alt="Deploys by Netlify"
+          />
+        </a>
+      </div>
+      <div class="text-sm font-medium text-gray-300 max-md:mt-6">
         <a
           href="https://github.com/choose-tech/choose-tech/blob/main/LICENSE"
           target="_blank"
@@ -56,6 +64,6 @@ import SimpleIconsGithub from "~icons/simple-icons/github";
 </div>
 
 <script is:inline>
-const el = document.getElementById("footer-date");
-el.innerText = new Date().getFullYear();
+  const el = document.getElementById("footer-date");
+  el.innerText = new Date().getFullYear();
 </script>
